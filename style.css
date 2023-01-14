@@ -1,24 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Work+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
+
+/* -----------------Common Style css---------------- */
 body {
-  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Work+Sans&display=swap");
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   font-family: "Work Sans", sans-serif;
+  background-color: var(--backgound);
 }
-/* -----------------Common Style css---------------- */
+:root {
+  --Primary: #3a3a3a;
+  --secendary: #18191f;
+  --white: #ffffff;
+  --dark-gray: #aaaaaa;
+  --black: #0000;
+  --orange: #e02c6d;
+  --light-orange: #fdf0fb;
+  --backgound: #fffffc;
+}
 .container {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
+  padding: 50px;
 }
-
+.description {
+  color: var(--Primary);
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+.primary-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 10px 24px;
+  border: 0;
+  border-radius: 41px;
+}
 /* ================Header menu style css================== */
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--Primary);
+}
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .menu ul {
   display: flex;
@@ -26,5 +60,130 @@ nav {
 }
 ul li a {
   margin: 0 10px;
+  color: var(--Primary);
   text-decoration: none;
+}
+/* =============Header banner style css-============== */
+.header-banner {
+  display: flex;
+  align-items: center;
+  gap: 133px;
+}
+.content-title {
+  font-weight: 700;
+  font-size: 52px;
+  color: var(--Primary);
+  margin-bottom: 16px;
+}
+.header-image {
+  border: 2px solid var(--light-orange);
+  border-radius: 100%;
+  padding: 30px;
+  /* background-color: #fdf0fb; */
+  /* margin: 50px; */
+}
+/* ================brands stye css======= 
+*/
+.brands {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+}
+/* ==========Popular Products style css=== */
+.container h2 {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--Primary);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.product {
+  /* background-color: var(--white); */
+  /* box-shadow: inset 10px 15px var(--white); */
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 17px 15px;
+  /* border-radius: 15px; */
+}
+.procduct-title {
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--secendary);
+  padding-top: 16px;
+}
+.product-price {
+  font-weight: 300;
+  font-size: 24px;
+  color: var(--secendary);
+  padding-top: 5px;
+}
+.product-rating ul {
+  display: flex;
+  /* text-decoration: none; */
+  padding-top: 5px;
+  align-items: center;
+}
+.product-rating ul li {
+  color: #fb8200;
+  margin-left: 5px;
+  list-style: none;
+}
+.product-rating ul span {
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 8px;
+}
+.see-more {
+  text-align: end;
+  margin: 15px;
+  color: var(--orange);
+}
+/* ==========feature product=========== */
+.feature-product {
+  display: flex;
+  gap: 96px;
+}
+.content-title2 {
+  text-align: start;
+  color: var(--Primary);
+  font-size: 38px;
+  padding-bottom: 30px;
+}
+.feature-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 10px 24px;
+  border: 0;
+  border-radius: 0;
+}
+/* ==========footer========== */
+.footer {
+  background-color: black !important;
+  padding: 100px;
+}
+.footer-title {
+  text-align: center;
+  margin: 10px;
+  color: var(--white);
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+}
+.social-icon li {
+  margin: 0 10px;
+  list-style: none;
+  font-size: 18px;
 }
