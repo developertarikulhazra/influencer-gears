@@ -63,6 +63,15 @@ ul li a {
   color: var(--Primary);
   text-decoration: none;
 }
+/* =============mobile menu ================== */
+.mobile-view {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 30px;
+  width: 100%;
+}
 /* =============Header banner style css-============== */
 .header-banner {
   display: flex;
@@ -186,4 +195,15 @@ ul li a {
   margin: 0 10px;
   list-style: none;
   font-size: 18px;
+}
+/* =============Media quriye Responsive style css============ */
+@media only screen and (max-width: 576px) {
+  .desktop-view {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .mobile-view {
+    display: none;
+  }
 }
